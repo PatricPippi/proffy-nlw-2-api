@@ -24,7 +24,7 @@ export default class ClassesController {
             })
         }
 
-        const timeInMinutes = convertHourToMinutes(filters.time as string);
+        const timeInMinutes = convertHourToMinutes(time);
 
         try {
             const classes = await db('classes')
